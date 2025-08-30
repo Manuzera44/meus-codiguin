@@ -48,14 +48,14 @@ def batalhar():
         input(f"O {p1['Nome']} irá atacar(de ENTER para passar)")
         dano = random.randint(50, 75)
         pokemons[indice2]['pontos_de_vida'] -= dano
-        print(f"o dano de {dano} foi tirado da vida do pokemon do oponente a vida atual dele é {pokemons[indice2]['pontos_de_vida']}")
+        print(f"{pokemons[indice1]['Nome']} atacou usando {pokemons[indice1]['Ataque']} e deu o dano de {dano} foi tirado da vida do pokemon do oponente a vida atual dele é {pokemons[indice2]['pontos_de_vida']}")
         if p2['pontos_de_vida'] <= 0:
             print(f"O Campeão foi o {p1['Nome']}")
             break
         input(f"O {p2['Nome']} irá atacar(de ENTER para passar)")
         dano = random.randint(50, 75)
         pokemons[indice1]['pontos_de_vida'] -= dano
-        print(f"o dano de {dano} foi tirado da vida do pokemon do oponente a vida atual dele é {pokemons[indice1]['pontos_de_vida']}")
+        print(f"{pokemons[indice2]['Nome']} atacou usando {pokemons[indice2]['Ataque']} e deu o dano de {dano} foi tirado da vida do pokemon do oponente a vida atual dele é {pokemons[indice1]['pontos_de_vida']}")
         if p1['pontos_de_vida'] <= 0:
             print(f"O Campeão foi o {p2['Nome']}")
         
