@@ -253,3 +253,5 @@ def menu():
             print("\nErro: Opção inválida. Tente novamente.\n")
 
 menu()
+
+#teste dos guri
